@@ -9,7 +9,7 @@
 #include "FileDownloader.hpp"
 #include <QBuffer>
 #include <functional>
-
+#include "bass.h"
 
 
 int main(int argc, char *argv[])
@@ -100,6 +100,13 @@ int main(int argc, char *argv[])
 	);
 	*/
 	
+	BASS_Init(-1, 44100, 0, 0, NULL);
+	//qDebug() << BASS_ErrorGetCode();
+	HSTREAM stream = BASS_StreamCreateFile(FALSE, argv[0], 0, 0, 0);
+	//qDebug() << stream;
+	//qDebug() << BASS_ErrorGetCode();
+	BASS_ChannelPlay(stream, FALSE);
+//	qDebug() << BASS_ErrorGetCode();
 
 	w.show();
 	return a.exec();
