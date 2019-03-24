@@ -1,0 +1,912 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>XenonwaveClass</class>
+ <widget class="QMainWindow" name="XenonwaveClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1200</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Malgun Gothic</family>
+    <pointsize>12</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Xenonwave</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(34, 34, 34);</string>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="page">
+       <layout class="QGridLayout" name="gridLayout_7">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="gridLayout_6">
+          <item row="0" column="0">
+           <widget class="QLineEdit" name="lineEdit">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+ border: 2px solid gray;
+ border-radius: 10px;
+height: 25px;
+color: white;
+}
+
+QMenu {
+background-color: rgb(32, 32, 32);
+color: rgb(162, 162, 162);
+font: 12pt  'Roboto Lt';
+}
+
+QMenu::item::disabled {
+ color: rgb(80, 80, 80);
+}
+
+QMenu::item:selected{
+ background-color: rgb(64, 64, 64);
+ color: rgb(255, 255, 255);
+ } 
+
+QMenu::item:pressed{
+ background-color: rgb(80, 80, 80);
+ color: rgb(255, 255, 255);
+ } </string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QListWidget" name="listWidget">
+            <property name="contextMenuPolicy">
+             <enum>Qt::ActionsContextMenu</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(162, 162, 162);
+border: 0px;</string>
+            </property>
+            <property name="sortingEnabled">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_2">
+       <layout class="QGridLayout" name="gridLayout_8">
+        <item row="2" column="0">
+         <widget class="QListWidget" name="listWidget_4"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_7">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(162, 162, 162);
+font-weight: bold;</string>
+          </property>
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_8">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(162, 162, 162);
+font-weight: bold;</string>
+          </property>
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="gridLayout_9">
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_6">
+            <property name="styleSheet">
+             <string notr="true">color: rgb(162, 162, 162);
+font-weight: bold;</string>
+            </property>
+            <property name="text">
+             <string>Trending</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_5">
+            <property name="styleSheet">
+             <string notr="true">color: rgb(162, 162, 162);
+font-weight: bold;</string>
+            </property>
+            <property name="text">
+             <string>Frequently played</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QListWidget" name="listWidget_2"/>
+          </item>
+          <item row="3" column="0">
+           <widget class="QListWidget" name="listWidget_3"/>
+          </item>
+         </layout>
+        </item>
+        <item row="4" column="0">
+         <widget class="QListWidget" name="listWidget_5"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_3"/>
+      <widget class="QWidget" name="page_4"/>
+      <widget class="QWidget" name="page_5"/>
+      <widget class="QWidget" name="page_6"/>
+      <widget class="QWidget" name="page_7"/>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget_6">
+   <property name="minimumSize">
+    <size>
+     <width>1124</width>
+     <height>151</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>524287</width>
+     <height>500</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(25, 25, 25);
+color: black;</string>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::BottomDockWidgetArea</set>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>8</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_7">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="3" column="5">
+        <widget class="QSlider" name="horizontalSlider_2">
+         <property name="styleSheet">
+          <string notr="true">QSlider::groove:horizontal {
+border: 1px solid #999999;
+height: 14px;
+border-radius: 9px;
+}
+
+QSlider::sub-page:horizontal {
+background: rgb(53, 161, 255);
+border: 1px solid #777;
+height: 10px;
+border-radius: 4px;
+}
+
+QSlider::add-page:horizontal {
+background: rgb(32, 32, 32);
+border: 0px;
+width: 18px;
+radius: 5px;
+margin-top: -2px;
+margin-bottom: -2px;
+border-radius: 18px;
+}
+
+QSlider::handle:horizontal {
+background: white;
+border: 0px;
+width: 18px;
+radius: 5px;
+margin-top: -2px;
+margin-bottom: -2px;
+border-radius: 8px;
+}
+
+QSlider::handle:horizontal:hover {
+background: rgb(185, 185, 185);
+border: 0px;
+width: 18px;
+margin-top: -2px;
+margin-bottom: -2px;
+border-radius: 8px;
+}
+
+QSlider::handle:horizontal:hover {
+background: rgb(185, 185, 185);
+border: 0px;
+width: 18px;
+margin-top: -2px;
+margin-bottom: -2px;
+border-radius: 8px;
+}
+
+QSlider::sub-page:horizontal:disabled {
+background: #bbb;
+border-color: #999;
+}
+
+QSlider::add-page:horizontal:disabled {
+background: #eee;
+border-color: #999;
+}
+
+QSlider::handle:horizontal:disabled {
+background: #eee;
+border: 1px solid #aaa;
+border-radius: 4px;
+}</string>
+         </property>
+         <property name="maximum">
+          <number>300</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="7">
+        <widget class="QLabel" name="label_2">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(162, 162, 162);
+border: 0px;</string>
+         </property>
+         <property name="text">
+          <string>-0:32</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_4">
+         <property name="font">
+          <font>
+           <family>Nirmala UI Semilight</family>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(162, 162, 162);
+border: 0px;</string>
+         </property>
+         <property name="text">
+          <string>Qt Tests</string>
+         </property>
+         <property name="textFormat">
+          <enum>Qt::PlainText</enum>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+         <property name="margin">
+          <number>0</number>
+         </property>
+         <property name="indent">
+          <number>-90</number>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <widget class="QLabel" name="label">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(162, 162, 162);
+border: 0px;</string>
+         </property>
+         <property name="text">
+          <string>1:30</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QPushButton" name="pushButton">
+         <property name="styleSheet">
+          <string notr="true">QPushButton:hover {
+background-color: rgb(32, 32, 32);
+}
+
+QPushButton{
+border: 0px;
+qproperty-icon: url(:/Xenonwave/Resources/50682-200.png);
+}
+
+QPushButton:pressed {
+background-color: rgb(64, 64, 64);
+}
+
+QPushButton:checked {
+background-color: rgb(53, 161, 255);
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QPushButton" name="pushButton_2">
+         <property name="styleSheet">
+          <string notr="true">QPushButton:hover {
+background-color: rgb(32, 32, 32);
+}
+
+QPushButton{
+border: 0px;
+qproperty-icon: url(:/Xenonwave/Resources/back.png);
+}
+
+QPushButton:pressed {
+background-color: rgb(64, 64, 64);
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="5">
+        <widget class="QPushButton" name="pushButton_3">
+         <property name="styleSheet">
+          <string notr="true">QPushButton:hover {
+background-color: rgb(32, 32, 32);
+}
+
+QPushButton{
+border: 0px;
+qproperty-icon: url(:/Xenonwave/Resources/pause.png);
+}
+
+
+QPushButton:pressed {
+background-color: rgb(64, 64, 64);
+}
+
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>50</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="autoDefault">
+          <bool>true</bool>
+         </property>
+         <property name="default">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="6">
+        <widget class="QPushButton" name="pushButton_4">
+         <property name="styleSheet">
+          <string notr="true">QPushButton:hover {
+background-color: rgb(32, 32, 32);
+}
+
+QPushButton{
+border: 0px;
+qproperty-icon: url(:/Xenonwave/Resources/forward.png);
+}
+
+QPushButton:pressed {
+background-color: rgb(64, 64, 64);
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="7">
+        <widget class="QPushButton" name="pushButton_5">
+         <property name="styleSheet">
+          <string notr="true">QPushButton:hover {
+background-color: rgb(32, 32, 32);
+}
+
+QPushButton{
+border: 0px;
+qproperty-icon: url(:/Xenonwave/Resources/loop1.png);
+}
+
+QPushButton:pressed {
+background-color: rgb(64, 64, 64);
+}
+
+QPushButton:checked {
+background-color: rgb(72, 72, 72);
+}
+
+QPushButton:checked {
+background-color: rgb(53, 161, 255);
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0" rowspan="2">
+        <widget class="QLabel" name="label_3">
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>70</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="Xenonwave.qrc">:/Xenonwave/D:/Downloads/Screen Shot 2018-11-30 at 5.43.26 pm.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget">
+   <property name="minimumSize">
+    <size>
+     <width>198</width>
+     <height>565</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(25, 25, 25);
+color: black;
+</string>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::BottomDockWidgetArea|Qt::LeftDockWidgetArea|Qt::RightDockWidgetArea</set>
+   </property>
+   <property name="windowTitle">
+    <string/>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents">
+    <layout class="QGridLayout" name="gridLayout_5">
+     <item row="6" column="0">
+      <widget class="QPushButton" name="pushButton_13">
+       <property name="styleSheet">
+        <string notr="true">QPushButton:hover {
+background-color: rgb(32, 32, 32);
+}
+
+QPushButton{
+border: 0px;
+qproperty-icon: url(:/Xenonwave/Resources/trending.png);
+color: rgb(162, 162, 162);
+}
+
+
+QPushButton:pressed {
+background-color: rgb(64, 64, 64);
+}
+
+QPushButton:checked {
+background-color: rgb(64, 64, 64);
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string>         Trending</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="0">
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="0" column="0">
+        <widget class="QPushButton" name="pushButton_10">
+         <property name="styleSheet">
+          <string notr="true">QPushButton:hover {
+background-color: rgb(32, 32, 32);
+}
+
+QPushButton{
+border: 0px;
+qproperty-icon: url(:/Xenonwave/Resources/settings_cog.png);
+color: rgb(162, 162, 162);
+}
+
+
+QPushButton:pressed {
+background-color: rgb(64, 64, 64);
+}
+
+QPushButton:checked {
+background-color: rgb(64, 64, 64);
+}
+
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="pushButton_11">
+         <property name="styleSheet">
+          <string notr="true">QPushButton:hover {
+background-color: rgb(32, 32, 32);
+}
+
+QPushButton{
+border: 0px;
+qproperty-icon: url(:/Xenonwave/Resources/info.png);
+color: rgb(162, 162, 162);
+}
+
+
+QPushButton:pressed {
+background-color: rgb(64, 64, 64);
+}
+
+QPushButton:checked {
+background-color: rgb(64, 64, 64);
+}
+
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="5" column="0">
+      <widget class="QPushButton" name="pushButton_12">
+       <property name="styleSheet">
+        <string notr="true">QPushButton:hover {
+background-color: rgb(32, 32, 32);
+}
+
+QPushButton{
+border: 0px;
+qproperty-icon: url(:/Xenonwave/Resources/radio.png);
+color: rgb(162, 162, 162);
+}
+
+
+QPushButton:pressed {
+background-color: rgb(64, 64, 64);
+}
+
+QPushButton:checked {
+background-color: rgb(64, 64, 64);
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string>              Radio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QPushButton" name="pushButton_7">
+       <property name="styleSheet">
+        <string notr="true">QPushButton:hover {
+background-color: rgb(32, 32, 32);
+}
+
+QPushButton{
+border: 0px;
+qproperty-icon: url(:/Xenonwave/Resources/search.png);
+color: rgb(162, 162, 162);
+}
+
+
+QPushButton:pressed {
+background-color: rgb(64, 64, 64);
+}
+
+QPushButton:checked {
+background-color: rgb(64, 64, 64);
+}
+
+
+
+</string>
+       </property>
+       <property name="text">
+        <string>         Search</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QPushButton" name="pushButton_6">
+       <property name="styleSheet">
+        <string notr="true">QPushButton:hover {
+background-color: rgb(32, 32, 32);
+}
+
+QPushButton{
+border: 0px;
+qproperty-icon: url(:/Xenonwave/Resources/playlists.png);
+color: rgb(162, 162, 162);
+}
+
+
+QPushButton:pressed {
+background-color: rgb(64, 64, 64);
+}
+
+QPushButton:checked {
+background-color: rgb(64, 64, 64);
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string>   My Playlists</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QPushButton" name="pushButton_8">
+       <property name="styleSheet">
+        <string notr="true">QPushButton:hover {
+background-color: rgb(32, 32, 32);
+}
+
+QPushButton{
+border: 0px;
+qproperty-icon: url(:/Xenonwave/Resources/home.png);
+color: rgb(162, 162, 162);
+}
+
+
+QPushButton:pressed {
+background-color: rgb(64, 64, 64);
+}
+
+QPushButton:checked {
+background-color: rgb(64, 64, 64);
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string>           Home</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QPushButton" name="pushButton_14">
+       <property name="styleSheet">
+        <string notr="true">QPushButton:hover {
+background-color: rgb(32, 32, 32);
+}
+
+QPushButton{
+border: 0px;
+qproperty-icon: url(:/Xenonwave/Resources/recommended.png);
+color: rgb(162, 162, 162);
+}
+
+
+QPushButton:pressed {
+background-color: rgb(64, 64, 64);
+}
+
+QPushButton:checked {
+background-color: rgb(64, 64, 64);
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string> Recommended</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QPushButton" name="pushButton_9">
+       <property name="styleSheet">
+        <string notr="true">QPushButton:hover {
+background-color: rgb(32, 32, 32);
+}
+
+QPushButton{
+border: 0px;
+qproperty-icon: url(:/Xenonwave/Resources/songs.png);
+color: rgb(162, 162, 162);
+}
+
+
+QPushButton:pressed {
+background-color: rgb(64, 64, 64);
+}
+
+QPushButton:checked {
+background-color: rgb(64, 64, 64);
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string>     My Library</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <zorder>dockWidget</zorder>
+  <zorder>dockWidget_6</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="Xenonwave.qrc"/>
+  <include location="../../../../.designer/backup/Xenonwave.qrc"/>
+ </resources>
+ <connections/>
+</ui>
