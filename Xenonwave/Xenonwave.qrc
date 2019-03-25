@@ -1,5 +1,7 @@
 <RCC>
     <qresource prefix="/Xenonwave">
+        <file>D:/Downloads/Screen Shot 2018-11-30 at 5.43.26 pm.png</file>
+        <file>background-gray.png</file>
         <file>fonts/Roboto-Black.ttf</file>
         <file>fonts/Roboto-BlackItalic.ttf</file>
         <file>fonts/Roboto-Bold.ttf</file>

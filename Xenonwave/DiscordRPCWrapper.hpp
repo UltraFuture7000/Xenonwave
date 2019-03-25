@@ -15,7 +15,7 @@ public:
 
 
 		// Discord_Initialize(const char* applicationId, DiscordEventHandlers* handlers, int autoRegister, const char* optionalSteamId, int pipe)
-//		Discord_Initialize(, &handlers, 1, 0);
+		Discord_Initialize(, &handlers, 1, 0);
 
 
 		char buffer[256];
