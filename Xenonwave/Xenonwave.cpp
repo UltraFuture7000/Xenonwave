@@ -24,7 +24,11 @@ Xenonwave::Xenonwave(QWidget *parent)
 									this, 
 									SLOT(searchBoxItemClicked(QListWidgetItem*)));
 
-	timer->start(20);
+	QObject::connect(ui.horizontalSlider_2, SIGNAL(sliderMoved(int)),
+					this,
+					SLOT(positionSliderMoved()));
+
+	timer->start(140);
 
 	qApp->installEventFilter(this);
 }
@@ -34,6 +38,10 @@ void Xenonwave::update() {
 	if (shouldReloadSearchResults) {
 		ui.listWidget->repaint();
 	}
+
+	ui.horizontalSlider_2->setValue(currentSong.getPosition());
+	
+	
 	
 }
 
@@ -120,4 +128,8 @@ void Xenonwave::searchBoxItemClicked(QListWidgetItem *item) {
 	menu->addAction(moreFromAuthor);
 	menu->exec(QCursor::pos() + QPoint(20, 20));
 	
+}
+
+void Xenonwave::positionSliderMoved() {
+	currentSong.setPosition(ui.horizontalSlider_2->value());
 }

@@ -10,12 +10,22 @@
 #include <QBuffer>
 #include <functional>
 #include "bass.h"
+#include <qdir.h>
+
+#include <Python.h>
+#include "qmultimedia.h"
+#include "qmediaplayer.h"
+#include "qmediametadata.h"
 
 
 int main(int argc, char *argv[])
 {
 	QApplication a(argc, argv);
 	Xenonwave w;
+
+	BASS_Init(-1, 44100, 0, 0, 0);
+	avformat_network_init();
+	av_register_all();
 
 	//DiscordRPCInstance rpc;
 	//rpc.init();
@@ -29,6 +39,7 @@ int main(int argc, char *argv[])
 	QFont Roboto("Roboto", 12, QFont::PreferAntialias);
 	QFont RobotoCondensedMedium("Roboto Cn", 14, QFont::PreferAntialias);
 	QFont RobotoCondensedSmall("Roboto Cn", 11, QFont::PreferAntialias);
+	QFont RobotoCondensedTiny("Roboto Cn", 9, QFont::PreferAntialias);
 	QFont RobotoLtTiny("Roboto Lt", 8, QFont::PreferAntialias);
 	QFont RobotoLtSmall("Roboto Lt", 10, QFont::PreferAntialias);
 	QFont RobotoLtLarge("Roboto Lt", 18, QFont::PreferAntialias);
@@ -69,7 +80,7 @@ int main(int argc, char *argv[])
 
 
 	// Music name 
-	w.ui.label_4->setFont(RobotoCondensedSmall);
+	w.ui.label_4->setFont(RobotoCondensedTiny);
 
 	// Duration indicators
 	w.ui.label->setFont(Roboto);
@@ -100,14 +111,44 @@ int main(int argc, char *argv[])
 	);
 	*/
 	
-	BASS_Init(-1, 44100, 0, 0, NULL);
-	//qDebug() << BASS_ErrorGetCode();
-	HSTREAM stream = BASS_StreamCreateFile(FALSE, argv[0], 0, 0, 0);
-	//qDebug() << stream;
-	//qDebug() << BASS_ErrorGetCode();
-	BASS_ChannelPlay(stream, FALSE);
-//	qDebug() << BASS_ErrorGetCode();
 
+
+
+	w.currentSong.loadFromYouTubeURL("https://www.youtube.com/watch?v=LBr7kECsjcQ");
+	std::this_thread::sleep_for(std::chrono::seconds(4));
+	w.ui.horizontalSlider_2->setMaximum(w.currentSong.getLength());
+	//w.ui.horizontalSlider_2->setMaximum(w.currentSong.getLength());
+	//int s = w.currentSong.getLength();
+	//w.ui.label_3->setPixmap(w.currentSong.getAlbumArt());
+	//w.ui.label_4->setText(w.currentSong.getTitle());
+
+
+	
+	//PyRun_SimpleString("print('Hello World from Embedded Python!!!')");
+	
+	//Py_Setenv("PYTHONPATH", ".", 0);
+	
+	/*
+	wchar_t array[8192];
+	Py_Initialize();
+	Py_SetProgramName((wchar_t*)"yt-link-extractor.py");
+	PyObject *sys = PyImport_ImportModule("sys");
+	PyObject *path = PyObject_GetAttrString(sys, "path");
+	
+	QString(QDir::currentPath() + "\\Modules\\yt-link-extractor.py").toWCharArray(array);
+	std::string s = (QDir::currentPath() + "\\Modules\\yt-link-extractor.py").toStdString();
+	std::string d = (QDir::currentPath() + "\\Modules").toStdString();
+	PyList_Append(path, PyUnicode_FromString(d.c_str()));
+	std::wcout << Py_GetPath();
+	PyObject *obj = Py_BuildValue("s", s.c_str());
+	FILE *file = _Py_fopen_obj(obj, "r+");
+	if (file != NULL) {
+		PyRun_SimpleFile(file, s.c_str());
+	}
+	*/
+
+	//w.currentSong.play();
 	w.show();
 	return a.exec();
 }
+

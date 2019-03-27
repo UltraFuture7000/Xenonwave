@@ -6,12 +6,14 @@
 #include "SearchListWidget.h"
 #include <queue>
 #include <functional>
+#include "Song.hpp"
 
 class Xenonwave : public QMainWindow
 {
 	Q_OBJECT
 
 public:
+	Song currentSong;
 	Xenonwave(QWidget *parent = Q_NULLPTR);
 	Ui::XenonwaveClass ui;
 
@@ -22,4 +24,5 @@ private:
 private slots:
 	void searchBoxItemClicked(QListWidgetItem *item);
 	void update();
+	void positionSliderMoved();
 };

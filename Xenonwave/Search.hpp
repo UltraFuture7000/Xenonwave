@@ -15,6 +15,11 @@
 
 #include "FileDownloader.hpp"
 
+#ifdef max
+#undef max
+#undef min
+#endif
+
 struct SearchResult {
 	std::string name;
 	QIcon* iconPtr;
@@ -29,10 +34,6 @@ std::vector<SearchResult> getResults(std::string searchTerm)
 	std::vector<SearchResult> s;
 	std::string ytSearchLink = "https://www.youtube.com/results?search_query=";
 
-	/*Weird bug fix...*/
-	if (searchTerm.back() == searchTerm.front()) {
-		searchTerm[searchTerm.length() - 1] = ' ';
-	}
 
 	QString stringToProcess(QString::fromStdString(searchTerm));
 	stringToProcess.replace(QString(" "), QString("%20"));

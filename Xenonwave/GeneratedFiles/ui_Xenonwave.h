@@ -56,15 +56,15 @@ public:
     QWidget *dockWidgetContents_7;
     QHBoxLayout *horizontalLayout;
     QGridLayout *gridLayout_2;
-    QSlider *horizontalSlider_2;
-    QLabel *label_2;
-    QLabel *label_4;
-    QLabel *label;
-    QPushButton *pushButton;
     QPushButton *pushButton_2;
     QPushButton *pushButton_3;
-    QPushButton *pushButton_4;
+    QLabel *label_2;
     QPushButton *pushButton_5;
+    QLabel *label_4;
+    QPushButton *pushButton;
+    QPushButton *pushButton_4;
+    QSlider *horizontalSlider_2;
+    QLabel *label;
     QLabel *label_3;
     QDockWidget *dockWidget;
     QWidget *dockWidgetContents;
@@ -145,7 +145,7 @@ public:
         listWidget->setContextMenuPolicy(Qt::ActionsContextMenu);
         listWidget->setStyleSheet(QString::fromUtf8("color: rgb(162, 162, 162);\n"
 "border: 0px;"));
-        listWidget->setSortingEnabled(true);
+        listWidget->setSortingEnabled(false);
 
         gridLayout_6->addWidget(listWidget, 1, 0, 1, 1);
 
@@ -249,6 +249,144 @@ public:
         gridLayout_2 = new QGridLayout();
         gridLayout_2->setSpacing(6);
         gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
+        pushButton_2 = new QPushButton(dockWidgetContents_7);
+        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
+        pushButton_2->setStyleSheet(QString::fromUtf8("QPushButton:hover {\n"
+"background-color: rgb(32, 32, 32);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+"border: 0px;\n"
+"qproperty-icon: url(:/Xenonwave/Resources/back.png);\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"background-color: rgb(64, 64, 64);\n"
+"}\n"
+""));
+        pushButton_2->setIconSize(QSize(30, 30));
+        pushButton_2->setCheckable(false);
+
+        gridLayout_2->addWidget(pushButton_2, 2, 2, 1, 1);
+
+        pushButton_3 = new QPushButton(dockWidgetContents_7);
+        pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
+        pushButton_3->setStyleSheet(QString::fromUtf8("QPushButton:hover {\n"
+"background-color: rgb(32, 32, 32);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+"border: 0px;\n"
+"qproperty-icon: url(:/Xenonwave/Resources/pause.png);\n"
+"}\n"
+"\n"
+"\n"
+"QPushButton:pressed {\n"
+"background-color: rgb(64, 64, 64);\n"
+"}\n"
+"\n"
+""));
+        pushButton_3->setIconSize(QSize(50, 40));
+        pushButton_3->setAutoDefault(true);
+
+        gridLayout_2->addWidget(pushButton_3, 2, 5, 1, 1);
+
+        label_2 = new QLabel(dockWidgetContents_7);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+        label_2->setStyleSheet(QString::fromUtf8("color: rgb(162, 162, 162);\n"
+"border: 0px;"));
+        label_2->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+
+        gridLayout_2->addWidget(label_2, 4, 7, 1, 1);
+
+        pushButton_5 = new QPushButton(dockWidgetContents_7);
+        pushButton_5->setObjectName(QString::fromUtf8("pushButton_5"));
+        pushButton_5->setStyleSheet(QString::fromUtf8("QPushButton:hover {\n"
+"background-color: rgb(32, 32, 32);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+"border: 0px;\n"
+"qproperty-icon: url(:/Xenonwave/Resources/loop1.png);\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"background-color: rgb(64, 64, 64);\n"
+"}\n"
+"\n"
+"QPushButton:checked {\n"
+"background-color: rgb(72, 72, 72);\n"
+"}\n"
+"\n"
+"QPushButton:checked {\n"
+"background-color: rgb(53, 161, 255);\n"
+"}\n"
+""));
+        pushButton_5->setIconSize(QSize(30, 30));
+        pushButton_5->setCheckable(true);
+
+        gridLayout_2->addWidget(pushButton_5, 2, 7, 1, 1);
+
+        label_4 = new QLabel(dockWidgetContents_7);
+        label_4->setObjectName(QString::fromUtf8("label_4"));
+        QFont font1;
+        font1.setFamily(QString::fromUtf8("Nirmala UI Semilight"));
+        font1.setPointSize(9);
+        label_4->setFont(font1);
+        label_4->setStyleSheet(QString::fromUtf8("color: rgb(162, 162, 162);\n"
+"border: 0px;"));
+        label_4->setTextFormat(Qt::PlainText);
+        label_4->setAlignment(Qt::AlignCenter);
+        label_4->setWordWrap(true);
+        label_4->setMargin(0);
+        label_4->setIndent(-90);
+
+        gridLayout_2->addWidget(label_4, 4, 0, 1, 1);
+
+        pushButton = new QPushButton(dockWidgetContents_7);
+        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        pushButton->setStyleSheet(QString::fromUtf8("QPushButton:hover {\n"
+"background-color: rgb(32, 32, 32);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+"border: 0px;\n"
+"qproperty-icon: url(:/Xenonwave/Resources/50682-200.png);\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"background-color: rgb(64, 64, 64);\n"
+"}\n"
+"\n"
+"QPushButton:checked {\n"
+"background-color: rgb(53, 161, 255);\n"
+"}\n"
+""));
+        pushButton->setIconSize(QSize(30, 30));
+        pushButton->setCheckable(true);
+
+        gridLayout_2->addWidget(pushButton, 2, 1, 1, 1);
+
+        pushButton_4 = new QPushButton(dockWidgetContents_7);
+        pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
+        pushButton_4->setStyleSheet(QString::fromUtf8("QPushButton:hover {\n"
+"background-color: rgb(32, 32, 32);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+"border: 0px;\n"
+"qproperty-icon: url(:/Xenonwave/Resources/forward.png);\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"background-color: rgb(64, 64, 64);\n"
+"}\n"
+""));
+        pushButton_4->setIconSize(QSize(30, 30));
+        pushButton_4->setCheckable(false);
+
+        gridLayout_2->addWidget(pushButton_4, 2, 6, 1, 1);
+
         horizontalSlider_2 = new QSlider(dockWidgetContents_7);
         horizontalSlider_2->setObjectName(QString::fromUtf8("horizontalSlider_2"));
         horizontalSlider_2->setStyleSheet(QString::fromUtf8("QSlider::groove:horizontal {\n"
@@ -318,34 +456,10 @@ public:
 "border: 1px solid #aaa;\n"
 "border-radius: 4px;\n"
 "}"));
-        horizontalSlider_2->setMaximum(300);
+        horizontalSlider_2->setMaximum(0);
         horizontalSlider_2->setOrientation(Qt::Horizontal);
 
         gridLayout_2->addWidget(horizontalSlider_2, 3, 5, 1, 1);
-
-        label_2 = new QLabel(dockWidgetContents_7);
-        label_2->setObjectName(QString::fromUtf8("label_2"));
-        label_2->setStyleSheet(QString::fromUtf8("color: rgb(162, 162, 162);\n"
-"border: 0px;"));
-        label_2->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
-
-        gridLayout_2->addWidget(label_2, 4, 7, 1, 1);
-
-        label_4 = new QLabel(dockWidgetContents_7);
-        label_4->setObjectName(QString::fromUtf8("label_4"));
-        QFont font1;
-        font1.setFamily(QString::fromUtf8("Nirmala UI Semilight"));
-        font1.setPointSize(9);
-        label_4->setFont(font1);
-        label_4->setStyleSheet(QString::fromUtf8("color: rgb(162, 162, 162);\n"
-"border: 0px;"));
-        label_4->setTextFormat(Qt::PlainText);
-        label_4->setAlignment(Qt::AlignCenter);
-        label_4->setWordWrap(true);
-        label_4->setMargin(0);
-        label_4->setIndent(-90);
-
-        gridLayout_2->addWidget(label_4, 4, 0, 1, 1);
 
         label = new QLabel(dockWidgetContents_7);
         label->setObjectName(QString::fromUtf8("label"));
@@ -353,120 +467,6 @@ public:
 "border: 0px;"));
 
         gridLayout_2->addWidget(label, 4, 2, 1, 1);
-
-        pushButton = new QPushButton(dockWidgetContents_7);
-        pushButton->setObjectName(QString::fromUtf8("pushButton"));
-        pushButton->setStyleSheet(QString::fromUtf8("QPushButton:hover {\n"
-"background-color: rgb(32, 32, 32);\n"
-"}\n"
-"\n"
-"QPushButton{\n"
-"border: 0px;\n"
-"qproperty-icon: url(:/Xenonwave/Resources/50682-200.png);\n"
-"}\n"
-"\n"
-"QPushButton:pressed {\n"
-"background-color: rgb(64, 64, 64);\n"
-"}\n"
-"\n"
-"QPushButton:checked {\n"
-"background-color: rgb(53, 161, 255);\n"
-"}\n"
-""));
-        pushButton->setIconSize(QSize(30, 30));
-        pushButton->setCheckable(true);
-
-        gridLayout_2->addWidget(pushButton, 2, 1, 1, 1);
-
-        pushButton_2 = new QPushButton(dockWidgetContents_7);
-        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
-        pushButton_2->setStyleSheet(QString::fromUtf8("QPushButton:hover {\n"
-"background-color: rgb(32, 32, 32);\n"
-"}\n"
-"\n"
-"QPushButton{\n"
-"border: 0px;\n"
-"qproperty-icon: url(:/Xenonwave/Resources/back.png);\n"
-"}\n"
-"\n"
-"QPushButton:pressed {\n"
-"background-color: rgb(64, 64, 64);\n"
-"}\n"
-""));
-        pushButton_2->setIconSize(QSize(30, 30));
-        pushButton_2->setCheckable(false);
-
-        gridLayout_2->addWidget(pushButton_2, 2, 2, 1, 1);
-
-        pushButton_3 = new QPushButton(dockWidgetContents_7);
-        pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
-        pushButton_3->setStyleSheet(QString::fromUtf8("QPushButton:hover {\n"
-"background-color: rgb(32, 32, 32);\n"
-"}\n"
-"\n"
-"QPushButton{\n"
-"border: 0px;\n"
-"qproperty-icon: url(:/Xenonwave/Resources/pause.png);\n"
-"}\n"
-"\n"
-"\n"
-"QPushButton:pressed {\n"
-"background-color: rgb(64, 64, 64);\n"
-"}\n"
-"\n"
-""));
-        pushButton_3->setIconSize(QSize(50, 40));
-        pushButton_3->setAutoDefault(true);
-
-        gridLayout_2->addWidget(pushButton_3, 2, 5, 1, 1);
-
-        pushButton_4 = new QPushButton(dockWidgetContents_7);
-        pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
-        pushButton_4->setStyleSheet(QString::fromUtf8("QPushButton:hover {\n"
-"background-color: rgb(32, 32, 32);\n"
-"}\n"
-"\n"
-"QPushButton{\n"
-"border: 0px;\n"
-"qproperty-icon: url(:/Xenonwave/Resources/forward.png);\n"
-"}\n"
-"\n"
-"QPushButton:pressed {\n"
-"background-color: rgb(64, 64, 64);\n"
-"}\n"
-""));
-        pushButton_4->setIconSize(QSize(30, 30));
-        pushButton_4->setCheckable(false);
-
-        gridLayout_2->addWidget(pushButton_4, 2, 6, 1, 1);
-
-        pushButton_5 = new QPushButton(dockWidgetContents_7);
-        pushButton_5->setObjectName(QString::fromUtf8("pushButton_5"));
-        pushButton_5->setStyleSheet(QString::fromUtf8("QPushButton:hover {\n"
-"background-color: rgb(32, 32, 32);\n"
-"}\n"
-"\n"
-"QPushButton{\n"
-"border: 0px;\n"
-"qproperty-icon: url(:/Xenonwave/Resources/loop1.png);\n"
-"}\n"
-"\n"
-"QPushButton:pressed {\n"
-"background-color: rgb(64, 64, 64);\n"
-"}\n"
-"\n"
-"QPushButton:checked {\n"
-"background-color: rgb(72, 72, 72);\n"
-"}\n"
-"\n"
-"QPushButton:checked {\n"
-"background-color: rgb(53, 161, 255);\n"
-"}\n"
-""));
-        pushButton_5->setIconSize(QSize(30, 30));
-        pushButton_5->setCheckable(true);
-
-        gridLayout_2->addWidget(pushButton_5, 2, 7, 1, 1);
 
         label_3 = new QLabel(dockWidgetContents_7);
         label_3->setObjectName(QString::fromUtf8("label_3"));
@@ -767,14 +767,14 @@ public:
         label_8->setText(QCoreApplication::translate("XenonwaveClass", "TextLabel", nullptr));
         label_6->setText(QCoreApplication::translate("XenonwaveClass", "Trending", nullptr));
         label_5->setText(QCoreApplication::translate("XenonwaveClass", "Frequently played", nullptr));
-        label_2->setText(QCoreApplication::translate("XenonwaveClass", "-0:32", nullptr));
-        label_4->setText(QCoreApplication::translate("XenonwaveClass", "Qt Tests", nullptr));
-        label->setText(QCoreApplication::translate("XenonwaveClass", "1:30", nullptr));
-        pushButton->setText(QString());
         pushButton_2->setText(QString());
         pushButton_3->setText(QString());
-        pushButton_4->setText(QString());
+        label_2->setText(QCoreApplication::translate("XenonwaveClass", "-0:32", nullptr));
         pushButton_5->setText(QString());
+        label_4->setText(QCoreApplication::translate("XenonwaveClass", "Qt Tests", nullptr));
+        pushButton->setText(QString());
+        pushButton_4->setText(QString());
+        label->setText(QCoreApplication::translate("XenonwaveClass", "1:30", nullptr));
         label_3->setText(QString());
         dockWidget->setWindowTitle(QString());
         pushButton_13->setText(QCoreApplication::translate("XenonwaveClass", "         Trending", nullptr));

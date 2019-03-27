@@ -84,7 +84,7 @@ QMenu::item:pressed{
 border: 0px;</string>
             </property>
             <property name="sortingEnabled">
-             <bool>true</bool>
+             <bool>false</bool>
             </property>
            </widget>
           </item>
@@ -192,6 +192,224 @@ color: black;</string>
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
       <layout class="QGridLayout" name="gridLayout_2">
+       <item row="2" column="2">
+        <widget class="QPushButton" name="pushButton_2">
+         <property name="styleSheet">
+          <string notr="true">QPushButton:hover {
+background-color: rgb(32, 32, 32);
+}
+
+QPushButton{
+border: 0px;
+qproperty-icon: url(:/Xenonwave/Resources/back.png);
+}
+
+QPushButton:pressed {
+background-color: rgb(64, 64, 64);
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="5">
+        <widget class="QPushButton" name="pushButton_3">
+         <property name="styleSheet">
+          <string notr="true">QPushButton:hover {
+background-color: rgb(32, 32, 32);
+}
+
+QPushButton{
+border: 0px;
+qproperty-icon: url(:/Xenonwave/Resources/pause.png);
+}
+
+
+QPushButton:pressed {
+background-color: rgb(64, 64, 64);
+}
+
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>50</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="autoDefault">
+          <bool>true</bool>
+         </property>
+         <property name="default">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="7">
+        <widget class="QLabel" name="label_2">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(162, 162, 162);
+border: 0px;</string>
+         </property>
+         <property name="text">
+          <string>-0:32</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="7">
+        <widget class="QPushButton" name="pushButton_5">
+         <property name="styleSheet">
+          <string notr="true">QPushButton:hover {
+background-color: rgb(32, 32, 32);
+}
+
+QPushButton{
+border: 0px;
+qproperty-icon: url(:/Xenonwave/Resources/loop1.png);
+}
+
+QPushButton:pressed {
+background-color: rgb(64, 64, 64);
+}
+
+QPushButton:checked {
+background-color: rgb(72, 72, 72);
+}
+
+QPushButton:checked {
+background-color: rgb(53, 161, 255);
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_4">
+         <property name="font">
+          <font>
+           <family>Nirmala UI Semilight</family>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(162, 162, 162);
+border: 0px;</string>
+         </property>
+         <property name="text">
+          <string>Qt Tests</string>
+         </property>
+         <property name="textFormat">
+          <enum>Qt::PlainText</enum>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+         <property name="margin">
+          <number>0</number>
+         </property>
+         <property name="indent">
+          <number>-90</number>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QPushButton" name="pushButton">
+         <property name="styleSheet">
+          <string notr="true">QPushButton:hover {
+background-color: rgb(32, 32, 32);
+}
+
+QPushButton{
+border: 0px;
+qproperty-icon: url(:/Xenonwave/Resources/50682-200.png);
+}
+
+QPushButton:pressed {
+background-color: rgb(64, 64, 64);
+}
+
+QPushButton:checked {
+background-color: rgb(53, 161, 255);
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="6">
+        <widget class="QPushButton" name="pushButton_4">
+         <property name="styleSheet">
+          <string notr="true">QPushButton:hover {
+background-color: rgb(32, 32, 32);
+}
+
+QPushButton{
+border: 0px;
+qproperty-icon: url(:/Xenonwave/Resources/forward.png);
+}
+
+QPushButton:pressed {
+background-color: rgb(64, 64, 64);
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
        <item row="3" column="5">
         <widget class="QSlider" name="horizontalSlider_2">
          <property name="styleSheet">
@@ -263,56 +481,10 @@ border-radius: 4px;
 }</string>
          </property>
          <property name="maximum">
-          <number>300</number>
+          <number>0</number>
          </property>
          <property name="orientation">
           <enum>Qt::Horizontal</enum>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="7">
-        <widget class="QLabel" name="label_2">
-         <property name="styleSheet">
-          <string notr="true">color: rgb(162, 162, 162);
-border: 0px;</string>
-         </property>
-         <property name="text">
-          <string>-0:32</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="0">
-        <widget class="QLabel" name="label_4">
-         <property name="font">
-          <font>
-           <family>Nirmala UI Semilight</family>
-           <pointsize>9</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">color: rgb(162, 162, 162);
-border: 0px;</string>
-         </property>
-         <property name="text">
-          <string>Qt Tests</string>
-         </property>
-         <property name="textFormat">
-          <enum>Qt::PlainText</enum>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-         <property name="wordWrap">
-          <bool>true</bool>
-         </property>
-         <property name="margin">
-          <number>0</number>
-         </property>
-         <property name="indent">
-          <number>-90</number>
          </property>
         </widget>
        </item>
@@ -324,178 +496,6 @@ border: 0px;</string>
          </property>
          <property name="text">
           <string>1:30</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="1">
-        <widget class="QPushButton" name="pushButton">
-         <property name="styleSheet">
-          <string notr="true">QPushButton:hover {
-background-color: rgb(32, 32, 32);
-}
-
-QPushButton{
-border: 0px;
-qproperty-icon: url(:/Xenonwave/Resources/50682-200.png);
-}
-
-QPushButton:pressed {
-background-color: rgb(64, 64, 64);
-}
-
-QPushButton:checked {
-background-color: rgb(53, 161, 255);
-}
-</string>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-         <property name="iconSize">
-          <size>
-           <width>30</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="checkable">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="2">
-        <widget class="QPushButton" name="pushButton_2">
-         <property name="styleSheet">
-          <string notr="true">QPushButton:hover {
-background-color: rgb(32, 32, 32);
-}
-
-QPushButton{
-border: 0px;
-qproperty-icon: url(:/Xenonwave/Resources/back.png);
-}
-
-QPushButton:pressed {
-background-color: rgb(64, 64, 64);
-}
-</string>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-         <property name="iconSize">
-          <size>
-           <width>30</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="checkable">
-          <bool>false</bool>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="5">
-        <widget class="QPushButton" name="pushButton_3">
-         <property name="styleSheet">
-          <string notr="true">QPushButton:hover {
-background-color: rgb(32, 32, 32);
-}
-
-QPushButton{
-border: 0px;
-qproperty-icon: url(:/Xenonwave/Resources/pause.png);
-}
-
-
-QPushButton:pressed {
-background-color: rgb(64, 64, 64);
-}
-
-</string>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-         <property name="iconSize">
-          <size>
-           <width>50</width>
-           <height>40</height>
-          </size>
-         </property>
-         <property name="autoDefault">
-          <bool>true</bool>
-         </property>
-         <property name="default">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="6">
-        <widget class="QPushButton" name="pushButton_4">
-         <property name="styleSheet">
-          <string notr="true">QPushButton:hover {
-background-color: rgb(32, 32, 32);
-}
-
-QPushButton{
-border: 0px;
-qproperty-icon: url(:/Xenonwave/Resources/forward.png);
-}
-
-QPushButton:pressed {
-background-color: rgb(64, 64, 64);
-}
-</string>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-         <property name="iconSize">
-          <size>
-           <width>30</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="checkable">
-          <bool>false</bool>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="7">
-        <widget class="QPushButton" name="pushButton_5">
-         <property name="styleSheet">
-          <string notr="true">QPushButton:hover {
-background-color: rgb(32, 32, 32);
-}
-
-QPushButton{
-border: 0px;
-qproperty-icon: url(:/Xenonwave/Resources/loop1.png);
-}
-
-QPushButton:pressed {
-background-color: rgb(64, 64, 64);
-}
-
-QPushButton:checked {
-background-color: rgb(72, 72, 72);
-}
-
-QPushButton:checked {
-background-color: rgb(53, 161, 255);
-}
-</string>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-         <property name="iconSize">
-          <size>
-           <width>30</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="checkable">
-          <bool>true</bool>
          </property>
         </widget>
        </item>
@@ -511,7 +511,7 @@ background-color: rgb(53, 161, 255);
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap resource="Xenonwave.qrc">:/Xenonwave/D:/Downloads/Screen Shot 2018-11-30 at 5.43.26 pm.png</pixmap>
+          <pixmap>:/Xenonwave/D:/Downloads/Screen Shot 2018-11-30 at 5.43.26 pm.png</pixmap>
          </property>
          <property name="scaledContents">
           <bool>true</bool>
@@ -906,7 +906,7 @@ background-color: rgb(64, 64, 64);
  <layoutdefault spacing="6" margin="11"/>
  <resources>
   <include location="Xenonwave.qrc"/>
-  <include location="../../../../.designer/backup/Xenonwave.qrc"/>
+  <include location="Xenonwave.qrc"/>
  </resources>
  <connections/>
 </ui>
